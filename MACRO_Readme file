@@ -1,0 +1,18 @@
+                                                                 MACRO-PRO@EMC
+Introduction: Colocalization analysis is a method to study the interaction of two biomolecules stained with different color fluorochrome. There are many methods available to do colocalization analysis depending on the principle. Here, we develop an ImageJ Macro to measure colocalization of Protein of Interest at the endomembrane compartments.  
+ 
+ How to use Macro
+Opening a file: - Open ImageJ and simple drag Macro file to open it, or in the taskbar of ImageJ Plugin/macro/run and then you can open the macro file  
+
+Input Image: - For colocalization analysis, a stack of two images of the cell or group of cell is required. The first image of the stack is protein and second image should be endo membrane compartments. 
+
+Run Macro: to execute macro press CTRL+R or from macro file taskbar Macro/run.
+1.	On execution a window (Image Information) will pop up, enter the required information such as, Pixel sixe and radius of largest object to be quantified (in Pixel) and the count of fake dots you want to create.
+Note: To find the size of larges object to be quantified user need to look at endomembrane compartment staining and just count the approximate radius of largest compartment. It will remain the same for rest of analysis unless you change to different kind of endomembrane compartments. 
+2.	Then macro will ask to locate image files (Choose Source Directory) and location of folder where you want to save your result (Choose Destination Directory). 
+3.	Macro will ask you to select a region of Interest, where you want to do the analysis. Drag the rectangular box to select the best field of view. 
+4.	After execution you will find two text file in the destination folder, Result_EMC and Result_FakeDots corresponds to result of protein intensity measurement at specific endomembrane compartments and at Fake compartments respectively.  
+
+
+Precaution 
+•	Select region of interest with in the cell
